@@ -4,7 +4,6 @@ version: 0.1
 author: Nepian
 commands:
   nextenchant:
-    prmission: NextEnchant.enchantlevelup
     usage: /<command> <enchantment>
     aliases:
     - nc
