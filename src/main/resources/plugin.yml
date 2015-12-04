@@ -6,4 +6,4 @@ commands:
   nextenchant:
     usage: /<command> <enchantment>
     aliases:
-    - nc
+    - ne
