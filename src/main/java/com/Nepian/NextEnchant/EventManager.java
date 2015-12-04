@@ -7,7 +7,6 @@ import org.bukkit.event.Listener;
 import com.Nepian.NextEnchant.Listener.EnchantLevelUp.EluEnchLevelUp;
 import com.Nepian.NextEnchant.Listener.EnchantLevelUp.EluEnchantChecker;
 import com.Nepian.NextEnchant.Listener.EnchantLevelUp.EluXPChecker;
-import com.Nepian.NextEnchant.Listener.PlayerInteract.PiEnchantLevelUp;
 
 public class EventManager {
 	private static final Main plugin;
@@ -18,7 +17,6 @@ public class EventManager {
 
 	public static void load() {
 		registerEnchantLevelUpEvent();
-		registerPlayerInteractEvent();
 	}
 
 	public static void callEvent(Event event) {
@@ -33,9 +31,5 @@ public class EventManager {
 		registerEvent(new EluEnchantChecker());
 		registerEvent(new EluXPChecker());
 		registerEvent(new EluEnchLevelUp());
-	}
-	
-	private static void registerPlayerInteractEvent() {
-		registerEvent(new PiEnchantLevelUp());
 	}
 }
