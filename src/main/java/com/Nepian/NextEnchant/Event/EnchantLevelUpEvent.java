@@ -51,6 +51,8 @@ public class EnchantLevelUpEvent extends Event {
 	}
 	
 	public enum Outcome {
+		NO_PERMISSION,
+		NO_ENCHANTMENT,
 		NO_EXP,
 		SUCCESS
 	}

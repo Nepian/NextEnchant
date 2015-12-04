@@ -12,6 +12,7 @@ public class Main extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		EventManager.load();
+		CommandManager.load();
 	}
 	
 	public static Main getPlugin() {
